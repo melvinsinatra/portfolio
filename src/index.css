@@ -1,3 +1,5 @@
+@import 'animate.css';
+
 :root {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -16,4 +18,10 @@ body {
 
 *, *::before, *::after {
   box-sizing: border-box;
+  transition: all .3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
