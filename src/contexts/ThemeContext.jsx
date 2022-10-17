@@ -43,7 +43,7 @@ export const ThemeContextProvider = ({ children }) => {
 						text: {
 							primary: '#191D2B',
 							secondary: '#FFF',
-							tertiary: '#B2BECD'
+							tertiary: '#12181B'
 						}
 					}
 			  }
@@ -72,7 +72,7 @@ export const ThemeContextProvider = ({ children }) => {
 						text: {
 							primary: '#fff',
 							secondary: '#191D2B',
-							tertiary: '#12181B'
+							tertiary: '#B2BECD'
 						}
 					}
 			  })
