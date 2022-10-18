@@ -38,7 +38,8 @@ export const ThemeContextProvider = ({ children }) => {
 							600: '#12181B'
 						},
 						background: {
-							default: '#fff'
+							default: '#fff',
+							border: '#DBE1E8',
 						},
 						text: {
 							primary: '#191D2B',
@@ -67,7 +68,8 @@ export const ThemeContextProvider = ({ children }) => {
 							600: '#12181B'
 						},
 						background: {
-							default: '#191D2B'
+							default: '#191D2B',
+							border: '#2A2E35'
 						},
 						text: {
 							primary: '#fff',
