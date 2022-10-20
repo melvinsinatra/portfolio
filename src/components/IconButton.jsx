@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import { ThemeContext } from '../contexts/ThemeContext';
 import { useContext } from 'react';
-import { StyledIconButton } from '../styles/IconButton.styled.';
+import { StyledIconButton } from '../styles/IconButton.styled';
 
 const IconButton = ({ to, children }) => {
 	const theme = useContext(ThemeContext);

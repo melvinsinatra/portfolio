@@ -4,7 +4,6 @@ import { ThemeContext } from '../contexts/ThemeContext';
 import { useContext } from 'react';
 import IconButton from './IconButton';
 import { FaBook, FaEnvelope, FaHome, FaUserAlt } from 'react-icons/fa';
-import Ripple from './Ripple';
 
 const NavbarContainer = styled.div`
 	display: flex;
@@ -15,6 +14,8 @@ const NavbarContainer = styled.div`
 	flex-direction: ${({ isMobile }) => (isMobile ? 'row' : 'column')};
 	row-gap: ${({ isMobile }) => (isMobile ? 0 : '1em')};
 	column-gap: ${({ isMobile }) => (isMobile ? '.75em' : 0)};
+	top: ${({ isMobile }) => !isMobile && 0 };
+	left: ${({ isMobile }) => isMobile && 0 };
 	right: 0;
 	bottom: 0;
   z-index: 500;
