@@ -19,7 +19,7 @@ const TimelineCard = ({ period, title, subtitle, description }) => {
 	const COLOR_COMMON_WHITE = theme?.palette.common.white;
 	const COLOR_GREY_500 = theme?.palette.grey[500];
 	const COLOR_TEXT_PRIMARY = theme?.palette.text.primary;
-	const COLOR_TEXT_TERTIARY = theme?.palette.text.tertiary;
+	const COLOR_TEXT_ACCENT = theme?.palette.text.accent;
 
 	return (
 		<TimelineCardContainer>
@@ -33,9 +33,9 @@ const TimelineCard = ({ period, title, subtitle, description }) => {
 					<Period bgColor={COLOR_GREY_500} color={COLOR_COMMON_WHITE}>{period}</Period>
 				</PeriodWrapper>
 				<Title color={COLOR_TEXT_PRIMARY}>
-					{title}<Subtitle color={COLOR_TEXT_TERTIARY}> - {subtitle}</Subtitle>
+					{title}<Subtitle color={COLOR_TEXT_ACCENT}> - {subtitle}</Subtitle>
 				</Title>
-				<Description color={COLOR_TEXT_TERTIARY}>
+				<Description color={COLOR_TEXT_ACCENT}>
 					{description}
 				</Description>
 			</TimelineDetailsContainer>
