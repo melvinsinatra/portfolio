@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { ThemeContext } from '../contexts/ThemeContext';
 import { useContext } from 'react';
-import IconButton from './IconButton';
+import NavIconButton from './NavIconButton';
 import { FaBook, FaEnvelope, FaHome, FaUserAlt } from 'react-icons/fa';
 
 const NavbarContainer = styled.div`
@@ -28,18 +28,18 @@ const Navbar = () => {
 
 	return (
 		<NavbarContainer isMobile={window.innerWidth >= theme.breakpoints.values.md ? false : true}>
-			<IconButton to="/">
+			<NavIconButton to="/">
 				<FaHome className="icon--sm" />
-			</IconButton>
-			<IconButton to="/about-me">
+			</NavIconButton>
+			<NavIconButton to="/about-me">
 				<FaUserAlt className="icon--sm" />
-			</IconButton>
-			<IconButton to="/my-portfolio">
+			</NavIconButton>
+			<NavIconButton to="/my-portfolio">
 				<FaBook className="icon--sm" />
-			</IconButton>
-			<IconButton to="/contact-me">
+			</NavIconButton>
+			<NavIconButton to="/contact-me">
 				<FaEnvelope className="icon--sm" />
-			</IconButton>
+			</NavIconButton>
 		</NavbarContainer>
 	);
 };
