@@ -39,7 +39,7 @@ export const ThemeContextProvider = ({ children }) => {
 						},
 						background: {
 							default: '#fff',
-							border: '#DBE1E8',
+							secondary: '#DBE1E8',
 						},
 						text: {
 							primary: '#191D2B',
@@ -70,7 +70,7 @@ export const ThemeContextProvider = ({ children }) => {
 						},
 						background: {
 							default: '#191D2B',
-							border: '#2A2E35'
+							secondary: '#2A2E35'
 						},
 						text: {
 							primary: '#fff',

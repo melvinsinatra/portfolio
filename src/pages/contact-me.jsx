@@ -9,13 +9,13 @@ import { IconButton } from './../components';
 
 const ContactMe = () => {
 	const theme = useContext(ThemeContext);
-	const COLOR_GREY_500 = theme?.palette.grey[500];
 	const COLOR_TEXT_PRIMARY = theme?.palette.text.primary;
+	const COLOR_TEXT_TERTIARY = theme?.palette.text.tertiary;
 	const COLOR_PRIMARY_MAIN = theme?.palette.primary.main;
 
 	return (
 		<>
-			<DarkBackgroundTitle className="animate__animated animate__fadeIn" color={COLOR_GREY_500}>
+			<DarkBackgroundTitle className="animate__animated animate__fadeIn" color={COLOR_TEXT_TERTIARY}>
 				My
 				<br />
 				Information
@@ -35,23 +35,30 @@ const ContactMe = () => {
 							aspernatur esse pariatur odio fuga aut nemo.
 						</BodyText>
 						{/* Info Detail */}
-
-						<FaMapMarkerAlt className="icon--lg" />
-						<BodyText>Location:</BodyText>
-						<BodyText>South Bekasi, West Java, Indonesia</BodyText>
-
-						<FaPhoneAlt className="icon--lg" />
-
-						<BodyText>Phone Number:</BodyText>
-						<BodyText>+62 812-1942-2630</BodyText>
-
-						<FaEnvelope className="icon--lg" />
-
-						<BodyText>Email:</BodyText>
-						<BodyText>melvin.sinatra@binus.ac.id</BodyText>
+						<Flex py='.5em' colGap='1em'>
+							<Flex colGap='2em' flex={1.33}>
+								<FaMapMarkerAlt color={COLOR_TEXT_PRIMARY} className="icon--lg" />
+								<BodyText color={COLOR_TEXT_PRIMARY}>Location:</BodyText>
+							</Flex>
+							<BodyText color={COLOR_TEXT_PRIMARY} flex={3}>South Bekasi, West Java, Indonesia</BodyText>
+						</Flex>
+						<Flex py='.5em' colGap='1em'>
+							<Flex colGap='2em' flex={1.33}>
+								<FaPhoneAlt color={COLOR_TEXT_PRIMARY} className="icon--lg" />
+								<BodyText color={COLOR_TEXT_PRIMARY}>Phone Number:</BodyText>
+							</Flex>
+							<BodyText color={COLOR_TEXT_PRIMARY} flex={3}>+62 812-1942-2630</BodyText>
+						</Flex>
+						<Flex py='.5em' colGap='1em'>
+							<Flex colGap='2em' flex={1.33}>
+								<FaEnvelope color={COLOR_TEXT_PRIMARY} className="icon--lg" />
+								<BodyText color={COLOR_TEXT_PRIMARY}>Email:</BodyText>
+							</Flex>
+							<BodyText color={COLOR_TEXT_PRIMARY} flex={3}>melvin.sinatra@binus.ac.id</BodyText>
+						</Flex>
 
 						{/* Icons */}
-						<Flex align-items="center" colGap="1em">
+						<Flex align-items="center" colGap="1em" py='.5em'>
 							<IconButton href="https://www.linkedin.com/in/melvin-sinatra-7bb912151/" target="_blank">
 								<FaLinkedinIn className="icon--md" />
 							</IconButton>
@@ -63,7 +70,9 @@ const ContactMe = () => {
 					{/**
 					 * Contact Form Container
 					 */}
-					<SubContainer></SubContainer>
+					<SubContainer>
+
+					</SubContainer>
 				</PrimaryContainer>
 			</PageContainer>
 		</>

@@ -19,9 +19,12 @@ export const Flex = styled.div`
 	justify-content: ${({ justifyContent }) => justifyContent || 'flex-start'};
 	row-gap: ${({ rowGap }) => rowGap};
 	column-gap: ${({ colGap }) => colGap};
+	flex: ${({ flex }) => flex || '0 1 auto'};
+	padding-block: ${({ py }) => py || 0};
 `
 
 export const Wrapper = styled.div`
 	background-color: ${({bgColor}) => bgColor};
 	color: ${({color}) => color};
+	flex: ${({ flex }) => flex || '0 1 auto'};
 `

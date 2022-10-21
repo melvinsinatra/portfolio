@@ -42,4 +42,5 @@ export const BodyText = styled.p`
   font-weight: 400;
   color: ${({ color }) => color};
   margin: 0;
+	flex: ${({ flex }) => flex || '0 1 auto'};
 `

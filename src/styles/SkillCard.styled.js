@@ -19,7 +19,6 @@ export const SkillCardContainer = styled.div`
 
 export const SkillImage = styled.img`
   object-fit: cover;
-
 `
 
 export const SkillName = styled.p`

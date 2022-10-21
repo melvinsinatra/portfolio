@@ -8,18 +8,18 @@ const AchievementCard = ( { title, subtitle, date } ) => {
 
   const theme = useContext(ThemeContext);
   const COLOR_BACKGROUND_DEFAULT = theme?.palette.background.default;
-  const COLOR_BACKGROUND_BORDER = theme?.palette.background.border;
+  const COLOR_BACKGROUND_SECONDARY = theme?.palette.background.secondary;
   const COLOR_TEXT_PRIMARY = theme?.palette.text.primary;
-  const COLOR_TEXT_TERTIARY = theme?.palette.text.tertiary;
+  const COLOR_TEXT_ACCENT = theme?.palette.text.accent;
 
   return (
-    <AchievementCardContainer bgColor={COLOR_BACKGROUND_DEFAULT} borderColor={COLOR_BACKGROUND_BORDER}>
-      <MedalContainer bgColor={COLOR_BACKGROUND_DEFAULT} borderColor={COLOR_BACKGROUND_BORDER}>
+    <AchievementCardContainer bgColor={COLOR_BACKGROUND_DEFAULT} borderColor={COLOR_BACKGROUND_SECONDARY}>
+      <MedalContainer bgColor={COLOR_BACKGROUND_DEFAULT} borderColor={COLOR_BACKGROUND_SECONDARY}>
         <MedalIcon src={Medal} alt="Medal Icon"/>
       </MedalContainer>
       <AchievementDetailsContainer>
         <AchievementTitle color={COLOR_TEXT_PRIMARY}>{title}</AchievementTitle>
-        <AchievementSubtitle color={COLOR_TEXT_TERTIARY}>
+        <AchievementSubtitle color={COLOR_TEXT_ACCENT}>
           {subtitle}
           {' '}&#8226;{' '}
           {date}

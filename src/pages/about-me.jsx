@@ -11,20 +11,20 @@ import { achievements, education, experience, skills } from './../utils/constant
 import { AchievementsContainer } from './../styles/AboutMe.styled';
 import AchievementCard from '../components/AchievementCard';
 
-import More from '../assets/SVGs/More.svg';
 import Modal from '../components/Modal';
+import { MoreIcon } from './../components/MoreIcon';
 
 const AboutMe = () => {
 	const [openModal, setOpenModal] = useState(false);
 
 	function handleOpenModal() {
-		setOpenModal(prev => !prev);
+		setOpenModal((prev) => !prev);
 	}
 
 	const theme = useContext(ThemeContext);
 	const COLOR_PRIMARY_MAIN = theme?.palette.primary.main;
 	const COLOR_TEXT_PRIMARY = theme?.palette.text.primary;
-	const COLOR_GREY_500 = theme?.palette.grey[500];
+	const COLOR_TEXT_TERTIARY = theme?.palette.text.tertiary;
 
 	const educationCardEls = education.map((item, index) => (
 		<TimelineCard key={index} period={item?.period} title={item?.title} subtitle={item?.subtitle} description={item?.description} />
@@ -44,12 +44,12 @@ const AboutMe = () => {
 	return (
 		<>
 			{openModal && <Modal handleClick={handleOpenModal} />}
-			<DarkBackgroundTitle className='animate__animated animate__fadeIn' color={COLOR_GREY_500}>
+			<DarkBackgroundTitle className="animate__animated animate__fadeIn" color={COLOR_TEXT_TERTIARY}>
 				My
 				<br />
 				Bio
 			</DarkBackgroundTitle>
-			<PageContainer className='animate__animated animate__fadeIn' pB="2.5em" flexDirection="column" rowGap="2em">
+			<PageContainer className="animate__animated animate__fadeIn" pB="2.5em" flexDirection="column" rowGap="2em">
 				{/**
 				 * Page Title
 				 */}
@@ -59,7 +59,7 @@ const AboutMe = () => {
 				{/**
 				 * Primary Container (About Me and Stats)
 				 */}
-				<Container className='animate__animated animate__fadeIn'>
+				<Container className="animate__animated animate__fadeIn">
 					<MyInformationContainer>
 						<SubHeading color={COLOR_TEXT_PRIMARY}>Information About Me</SubHeading>
 						<BodyText color={COLOR_TEXT_PRIMARY}>
@@ -97,7 +97,11 @@ const AboutMe = () => {
 					</SubHeading>
 					<SkillsContainer>
 						{skillCardEls}
-						{<SkillCard handleClick={handleOpenModal} cursorPointer={true} image={More} name="More.." />}
+						{
+							<SkillCard handleClick={handleOpenModal} cursorPointer={true} name="More.." svgIcon={true}>
+								<MoreIcon />
+							</SkillCard>
+						}
 					</SkillsContainer>
 				</Container>
 				{/**
