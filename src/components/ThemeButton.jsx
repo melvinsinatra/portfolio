@@ -28,7 +28,10 @@ const ThemeButton = () => {
 	const { mode, setMode } = useContext(ThemeModeContext);
 	
 	function handleThemeClick() {
-    setMode(mode === "light" ? "dark" : "light")
+    setMode(prev => {
+      localStorage.setItem("theme", prev === "light" ? "dark" : "light");
+      return prev === "light" ? "dark" : "light";
+    })
   }
 
 	return (
