@@ -3,12 +3,13 @@ import { ThemeContext } from '../contexts/ThemeContext';
 import { useContext } from 'react';
 
 import Image from '../assets/hero.png';
+import { FaCloudDownloadAlt } from 'react-icons/fa';
 import { HeroBodyText, HeroHeading, HeroImage, HeroTextWrapper, PrimaryContainer, SecondaryContainer } from '../styles/HomePage.styled';
 import { PageContainer } from '../styles/Layouts.styled';
 
 import { ClipPath, ImageWrapper } from './../styles/HomePage.styled';
 import { EmphasizedText } from './../styles/Typographies.styled';
-import DownloadCVButton from './../components/DownloadCVButton';
+import Button from './../components/Button';
 
 const HomePage = () => {
 	const theme = useContext(ThemeContext);
@@ -38,7 +39,7 @@ const HomePage = () => {
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias neque aspernatur ipsa, soluta id suscipit dolorum provident quibusdam
 							asperiores, optio debitis obcaecati adipisci atque repellat.
 						</HeroBodyText>
-						<DownloadCVButton className={"animate__animated animate__slideInUp"} />
+						<Button className={"animate__animated animate__slideInUp"} Icon={FaCloudDownloadAlt}>Download CV</Button>
 					</HeroTextWrapper>
 				</SecondaryContainer>
 			</PageContainer>

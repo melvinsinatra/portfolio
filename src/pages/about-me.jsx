@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import DownloadCVButton from '../components/DownloadCVButton';
+import Button from '../components/Button';
 import TimelineCard from '../components/TimelineCard';
 import StatCard from '../components/StatCard';
 import SkillCard from '../components/SkillCard';
@@ -13,6 +13,7 @@ import AchievementCard from '../components/AchievementCard';
 
 import Modal from '../components/Modal';
 import { MoreIcon } from './../components/MoreIcon';
+import { FaCloudDownloadAlt } from 'react-icons/fa';
 
 const AboutMe = () => {
 	const [openModal, setOpenModal] = useState(false);
@@ -66,7 +67,7 @@ const AboutMe = () => {
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor
 							rhoncus dolor purus non enim praesent elementum facilisis leo, vel
 						</BodyText>
-						<DownloadCVButton />
+						<Button Icon={FaCloudDownloadAlt}>Download CV</Button>
 					</MyInformationContainer>
 					<StatsContainer>
 						<StatCard title="123+" subtitle="Projects Completed" />
