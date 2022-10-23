@@ -9,7 +9,7 @@ import { PageContainer } from '../styles/Layouts.styled';
 
 import { ClipPath, ImageWrapper } from './../styles/HomePage.styled';
 import { EmphasizedText } from './../styles/Typographies.styled';
-import Button from './../components/Button';
+import { Button } from '../components';
 
 import CampusImage from '../assets/binus-bekasi-campus.jpg';
 

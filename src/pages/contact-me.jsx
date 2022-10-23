@@ -5,9 +5,7 @@ import { SubContainer } from '../styles/ContactMe.styled';
 import { Flex, PageContainer, Wrapper } from '../styles/Layouts.styled';
 import { BodyText, DarkBackgroundTitle, EmphasizedText, PageTitle, SubHeading } from '../styles/Typographies.styled';
 import { PrimaryContainer } from './../styles/ContactMe.styled';
-import { IconButton } from './../components';
-import Input from '../components/Input';
-import Button from '../components/Button';
+import { IconButton, Input, Button } from '../components';
 
 const ContactMe = () => {
 	const theme = useContext(ThemeContext);

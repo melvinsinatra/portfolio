@@ -1,18 +1,13 @@
 import React, { useContext, useState } from 'react';
-import Button from '../components/Button';
-import TimelineCard from '../components/TimelineCard';
-import StatCard from '../components/StatCard';
-import SkillCard from '../components/SkillCard';
+import { Button, TimelineCard, StatCard, SkillCard, AchievementCard, MoreIcon } from '../components';
 import { ThemeContext } from '../contexts/ThemeContext';
 import { MyInformationContainer, Container, StatsContainer, EducationContainer, ExperienceContainer, SkillsContainer } from '../styles/AboutMe.styled';
 import { PageContainer } from './../styles/Layouts.styled';
 import { BodyText, DarkBackgroundTitle, EmphasizedText, PageTitle, SubHeading } from './../styles/Typographies.styled';
 import { achievements, education, experience, skills } from './../utils/constants';
 import { AchievementsContainer } from './../styles/AboutMe.styled';
-import AchievementCard from '../components/AchievementCard';
 
 import Modal from '../components/Modal';
-import { MoreIcon } from './../components/MoreIcon';
 import { FaCloudDownloadAlt } from 'react-icons/fa';
 
 const AboutMe = () => {

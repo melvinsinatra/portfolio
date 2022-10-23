@@ -3,8 +3,9 @@ import { DarkBackgroundTitle, EmphasizedText, PageSubTitle, PageTitle } from './
 import { PageContainer } from './../styles/Layouts.styled';
 import { ThemeContext } from '../contexts/ThemeContext';
 import { PortfolioCardsContainer } from '../styles/MyPortfolio.styled';
-import PortfolioCard from '../components/PortfolioCard';
+import { PortfolioCard } from '../components';
 import { projects } from './../utils/constants';
+
 
 const MyPortfolio = () => {
 
