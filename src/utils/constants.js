@@ -101,3 +101,49 @@ export const achievements = [
 		},
 
 ]
+
+export const projects = [
+	{
+		thumbnail: 'https://i.ibb.co/vwNkZs0/Apple-Porto-1.png',
+		title: 'Janji-Jywa',
+		description: 'Point of sales application made with Java',
+		link: 'https://github.com/melvinsinatra/business-app-development-project'
+	},
+	{
+		thumbnail: 'https://i.ibb.co/JvKyXQq/Apple-Porto-2.png',
+		title: 'Genshin Impact Gacha Simulator',
+		description: 'Unofficial Gacha Simulator made with Android Studio (Java)',
+		link: 'https://github.com/melvinsinatra/GenshinImpactGachaSimulator'
+	},
+	{
+		thumbnail: 'https://i.ibb.co/10NJLYF/Apple-Porto-3.png',
+		title: 'FindTheHantu',
+		description: '2D Action Maze Chase Game made with Java',
+		link: 'https://github.com/melvinsinatra/FindTheHantu'
+	},
+	{
+		thumbnail: 'https://i.ibb.co/gJYbp1D/Apple-Porto-4.png',
+		title: 'MyMeds',
+		description: 'Simple CRUD Application, made with Android Studio (Java)',
+		link: 'https://github.com/melvinsinatra/FindTheHantu'
+	},
+	{
+		thumbnail: 'https://i.ibb.co/0XM5Q3R/Apple-Porto-5.png',
+		title: 'TebakYuk',
+		description: 'Simple number guessing game made with Java',
+		link: 'https://github.com/melvinsinatra/TebakYuk'
+	},
+	{
+		thumbnail: 'https://i.ibb.co/4KDjRWP/Youtube-Clone.png',
+		title: 'Youtube Clone',
+		description: 'Clone of Youtube, made using ReactJS and Material UI',
+		link: 'https://github.com/melvinsinatra/youtube-clone'
+	},
+	{
+		thumbnail: 'https://i.ibb.co/BqrjL70/Huddle-Landing-Page.png',
+		title: 'Huddle Landing Page',
+		description: 'A simple landing page, made using ReactJS and styled-components',
+		link: 'https://github.com/melvinsinatra/huddle-landing-page'
+	},
+
+]

@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const AchievementCardContainer = styled.div`
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: ${({ flexDir }) => flexDir};
   width: 100%;
   background-color: ${({ bgColor }) => bgColor};
   border-radius: 1rem;
   border: 2px solid;
   border-color: ${({ borderColor }) => borderColor};
-  padding: 3em 4.5em;
-  column-gap: 2.5em;
+  padding: ${({ p }) => p};
+  gap: ${({ gap }) => gap};
 `
 
 export const MedalContainer = styled.div`
@@ -37,17 +37,19 @@ export const AchievementDetailsContainer = styled.div`
 `
 
 export const AchievementTitle = styled.p`
-  font-size: 1.5rem;
+  font-size: clamp(0.8rem, 1vw + 0.6rem, 1.5rem);
   font-weight: 900;
   text-transform: uppercase;
   color: ${({color}) => color};
   margin-top: 0;
   margin-bottom: 1em;
+  text-align: ${({ textAlign }) => textAlign};
 `
 
 export const AchievementSubtitle = styled.p`
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 1vw + 0.6rem, 1rem);
   font-weight: bold;
   color: ${({color}) => color};
   margin: 0;
+  text-align: ${({ textAlign }) => textAlign};
 `

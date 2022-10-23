@@ -3,13 +3,13 @@ import { ThemeContext } from '../contexts/ThemeContext';
 import { CloseButton, CloseButtonWrapper, ModalBackground, ModalBody, ModalContainer, ModalHeader, ModalWrapper } from '../styles/Modal.styled';
 import { skills } from '../utils/constants';
 import SkillCard from './SkillCard';
-import { FaWindowClose } from 'react-icons/fa';
 import { SubHeading } from '../styles/Typographies.styled';
 
 import { AiOutlineClose } from 'react-icons/ai'
 
 const Modal = ({ handleClick }) => {
 	const theme = useContext(ThemeContext);
+	const isMobile = window.innerWidth < theme?.breakpoints.values.md;
 	const COLOR_COMMON_BLACK = theme?.palette.common.black;
 	const COLOR_TEXT_PRIMARY = theme?.palette.text.primary;
   const COLOR_PRIMARY_MAIN = theme?.palette.primary.main;
@@ -21,7 +21,7 @@ const Modal = ({ handleClick }) => {
 	return (
 		<ModalBackground bgColor={COLOR_BACKGROUND_DEFAULT}>
 			<ModalWrapper>
-				<ModalContainer bgColor={COLOR_BACKGROUND_DEFAULT} borderColor={COLOR_PRIMARY_MAIN}>
+				<ModalContainer isMobile={isMobile} p={isMobile && '.5em'} bgColor={COLOR_BACKGROUND_DEFAULT} borderColor={COLOR_PRIMARY_MAIN}>
 					<ModalHeader>
 						<SubHeading>My Skill Set</SubHeading>
 						<CloseButtonWrapper>
@@ -30,7 +30,7 @@ const Modal = ({ handleClick }) => {
 							</CloseButton>
 						</CloseButtonWrapper>
 					</ModalHeader>
-					<ModalBody>{skillCardEls}</ModalBody>
+					<ModalBody isMobile={isMobile} gap={ isMobile ? '.5em' : '2em'}>{skillCardEls}</ModalBody>
 				</ModalContainer>
 			</ModalWrapper>
 		</ModalBackground>

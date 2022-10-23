@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaLinkedinIn, FaGithub, FaPaperPlane } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaEnvelope, FaLinkedinIn, FaGithub, FaPaperPlane, FaPhoneSquareAlt } from 'react-icons/fa';
 import { ThemeContext } from '../contexts/ThemeContext';
 import { SubContainer } from '../styles/ContactMe.styled';
 import { Flex, PageContainer, Wrapper } from '../styles/Layouts.styled';
@@ -14,6 +14,7 @@ const ContactMe = () => {
 	const COLOR_TEXT_PRIMARY = theme?.palette.text.primary;
 	const COLOR_TEXT_TERTIARY = theme?.palette.text.tertiary;
 	const COLOR_PRIMARY_MAIN = theme?.palette.primary.main;
+	const isMobile = window.innerWidth < theme.breakpoints.values.md;
 
 	return (
 		<>
@@ -22,11 +23,11 @@ const ContactMe = () => {
 				<br />
 				Information
 			</DarkBackgroundTitle>
-			<PageContainer className="animate__animated animate__fadeIn" flexDirection="column">
+			<PageContainer className="animate__animated animate__fadeIn" flexDir='column' p={isMobile && '0 1em'} pB={isMobile && '6em'}>
 				<PageTitle color={COLOR_TEXT_PRIMARY}>
 					<EmphasizedText color={COLOR_PRIMARY_MAIN}>Contact</EmphasizedText> Me
 				</PageTitle>
-				<PrimaryContainer>
+				<PrimaryContainer flexDir={isMobile ? 'column' : 'row'} colGap={!isMobile && '10%'} rowGap={isMobile && '3em'}>
 					{/**
 					 * Contact Me Details Container
 					 */}
@@ -37,30 +38,30 @@ const ContactMe = () => {
 							aspernatur esse pariatur odio fuga aut nemo.
 						</BodyText>
 						{/* Info Detail */}
-						<Flex py=".5em" colGap="1em">
-							<Flex colGap="2em" flex={1.33}>
+						<Flex py=".5em" colGap="1em" alignItems="center">
+							<Flex colGap={isMobile ? "1em" : "2em"} flex={isMobile ? 1.5 : 1.33} alignItems="center">
 								<FaMapMarkerAlt color={COLOR_TEXT_PRIMARY} className="icon--lg" />
 								<BodyText color={COLOR_TEXT_PRIMARY}>Location:</BodyText>
 							</Flex>
-							<BodyText color={COLOR_TEXT_PRIMARY} flex={3}>
+							<BodyText color={COLOR_TEXT_PRIMARY} flex={2}>
 								South Bekasi, West Java, Indonesia
 							</BodyText>
 						</Flex>
-						<Flex py=".5em" colGap="1em">
-							<Flex colGap="2em" flex={1.33}>
-								<FaPhoneAlt color={COLOR_TEXT_PRIMARY} className="icon--lg" />
+						<Flex py=".5em" colGap="1em" alignItems="center">
+							<Flex colGap={isMobile ? "1em" : "2em"} flex={isMobile ? 1.5 : 1.33} alignItems="center">
+									<FaPhoneSquareAlt color={COLOR_TEXT_PRIMARY} className="icon--lg"/>
 								<BodyText color={COLOR_TEXT_PRIMARY}>Phone Number:</BodyText>
 							</Flex>
-							<BodyText color={COLOR_TEXT_PRIMARY} flex={3}>
+							<BodyText color={COLOR_TEXT_PRIMARY} flex={2}>
 								+62 812-1942-2630
 							</BodyText>
 						</Flex>
-						<Flex py=".5em" colGap="1em">
-							<Flex colGap="2em" flex={1.33}>
+						<Flex py=".5em" colGap="1em" alignItems="center">
+							<Flex colGap={isMobile ? "1em" : "2em"} flex={isMobile ? 1.5 : 1.33} alignItems="center">
 								<FaEnvelope color={COLOR_TEXT_PRIMARY} className="icon--lg" />
 								<BodyText color={COLOR_TEXT_PRIMARY}>Email:</BodyText>
 							</Flex>
-							<BodyText color={COLOR_TEXT_PRIMARY} flex={3}>
+							<BodyText color={COLOR_TEXT_PRIMARY} flex={2}>
 								melvin.sinatra@binus.ac.id
 							</BodyText>
 						</Flex>
@@ -81,7 +82,7 @@ const ContactMe = () => {
 					<Wrapper flex="1">
 					<form action="https://formsubmit.co/melvin.sinatra2002@gmail.com" method="POST">
 						<SubContainer rowGap=".75em">
-							<Flex colGap="1em" justifyContent="space-between" flexDir="row">
+							<Flex colGap={!isMobile && '1em'} rowGap={isMobile && '.75em'} justifyContent="space-between" flexDir={isMobile ? "column" : "row"}>
 								<Input flex="1" type="text" placeholder="Name" name="name" />
 								<Input flex="1" type="email" placeholder="Email" name="email" />
 							</Flex>

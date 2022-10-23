@@ -26,6 +26,7 @@ const AboutMe = () => {
 	const COLOR_PRIMARY_MAIN = theme?.palette.primary.main;
 	const COLOR_TEXT_PRIMARY = theme?.palette.text.primary;
 	const COLOR_TEXT_TERTIARY = theme?.palette.text.tertiary;
+	const isMobile = window.innerWidth < theme?.breakpoints.values.md;
 
 	const educationCardEls = education.map((item, index) => (
 		<TimelineCard key={index} period={item?.period} title={item?.title} subtitle={item?.subtitle} description={item?.description} />
@@ -35,7 +36,7 @@ const AboutMe = () => {
 		<TimelineCard key={index} period={item?.period} title={item?.title} subtitle={item?.subtitle} description={item?.description} />
 	));
 
-	const displayedSkills = skills.slice(0, 9);
+	const displayedSkills = isMobile ? skills.slice(0, 3) : skills.slice(0, 9);
 	const skillCardEls = displayedSkills.map((item, index) => <SkillCard key={index} image={item?.image} name={item?.name} />);
 
 	const achievementCardEls = achievements.map((item, index) => (
@@ -50,7 +51,7 @@ const AboutMe = () => {
 				<br />
 				Bio
 			</DarkBackgroundTitle>
-			<PageContainer className="animate__animated animate__fadeIn" pB="2.5em" flexDirection="column" rowGap="2em">
+			<PageContainer className="animate__animated animate__fadeIn" p={isMobile && '0 1em'} pB={isMobile ? '6em' : '2.5em'} flexDir="column" rowGap="2em">
 				{/**
 				 * Page Title
 				 */}
@@ -60,7 +61,7 @@ const AboutMe = () => {
 				{/**
 				 * Primary Container (About Me and Stats)
 				 */}
-				<Container className="animate__animated animate__fadeIn">
+				<Container colGap={!isMobile && '10%'} rowGap={isMobile && '2em'} flexDir={isMobile ? 'column' : 'row'}>
 					<MyInformationContainer>
 						<SubHeading color={COLOR_TEXT_PRIMARY}>Information About Me</SubHeading>
 						<BodyText color={COLOR_TEXT_PRIMARY}>
@@ -69,17 +70,17 @@ const AboutMe = () => {
 						</BodyText>
 						<Button Icon={FaCloudDownloadAlt}>Download CV</Button>
 					</MyInformationContainer>
-					<StatsContainer>
-						<StatCard title="123+" subtitle="Projects Completed" />
-						<StatCard title="123+" subtitle="Projects Completed" />
-						<StatCard title="123+" subtitle="Projects Completed" />
-						<StatCard title="123+" subtitle="Projects Completed" />
+					<StatsContainer gap={isMobile ? '1em' : '2.5em'}>
+						<StatCard title="GPA" subtitle="3.85" />
+						<StatCard title="Hobbies" subtitle="Web and App Development" />
+						<StatCard title="9+" subtitle="Projects Completed" />
+						<StatCard title="4+" subtitle="Achievements" />
 					</StatsContainer>
 				</Container>
 				{/**
 				 * Secondary Container (Education and Experience)
 				 */}
-				<Container>
+				<Container colGap={!isMobile && '10%'} rowGap={isMobile && '2em'} flexDir={isMobile ? 'column' : 'row'}>
 					<EducationContainer>
 						<SubHeading color={COLOR_TEXT_PRIMARY}>Education</SubHeading>
 						{educationCardEls}
@@ -96,7 +97,7 @@ const AboutMe = () => {
 					<SubHeading color={COLOR_TEXT_PRIMARY} textAlign="center">
 						My Skill Set
 					</SubHeading>
-					<SkillsContainer>
+					<SkillsContainer gap={ isMobile ? '.5em' : '2em'} isMobile={isMobile}>
 						{skillCardEls}
 						{
 							<SkillCard handleClick={handleOpenModal} cursorPointer={true} name="More.." svgIcon={true}>

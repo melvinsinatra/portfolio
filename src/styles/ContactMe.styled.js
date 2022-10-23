@@ -2,7 +2,10 @@ import styled from 'styled-components';
 
 export const PrimaryContainer = styled.div`
 	display: flex;
-	column-gap: 10%;
+  flex-direction: ${({ flexDir }) => flexDir};
+	column-gap: ${({ colGap }) => colGap};
+	row-gap: ${({ rowGap }) => rowGap};
+  padding: ${({ p }) => p};
 	width: 100%;
 `;
 

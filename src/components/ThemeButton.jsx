@@ -7,8 +7,8 @@ import '../App.css';
 import Ripple from './Ripple';
 
 const StyledThemeButton = styled.button`
-  width: 70px;
-  height: 70px;
+  width: ${({ isMobile }) => isMobile ? '35px' : '70px'};
+  height: ${({ isMobile }) => isMobile ? '35px' : '70px'};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: fixed;
   top: 1vh;
@@ -20,12 +20,21 @@ const StyledThemeButton = styled.button`
   border: none;
   overflow: hidden;
   z-index: 501;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & svg {
+    width: ${({ isMobile }) => isMobile ? '75%' : '50%'};
+    height: ${({ isMobile }) => isMobile ? '75%' : '50%'};
+  }
 `
 
 const ThemeButton = () => {
 
 	const theme = useContext(ThemeContext);
 	const { mode, setMode } = useContext(ThemeModeContext);
+  const isMobile = window.innerWidth < theme?.breakpoints.values.md;
 	
 	function handleThemeClick() {
     setMode(prev => {
@@ -35,8 +44,8 @@ const ThemeButton = () => {
   }
 
 	return (
-      <StyledThemeButton onClick={handleThemeClick} bg={theme.palette.grey[400]} color={theme.palette.common.white}>
-        <FaRegMoon className="icon--md" />
+      <StyledThemeButton isMobile={isMobile} onClick={handleThemeClick} bg={theme.palette.grey[400]} color={theme.palette.common.white}>
+        <FaRegMoon />
 				<Ripple color={theme.palette.grey[500]} duration={800}/>
       </StyledThemeButton>
 	);

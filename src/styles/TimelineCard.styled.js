@@ -8,6 +8,19 @@ export const TimelineCardContainer = styled.div`
 
 export const IconContainer = styled.div`
 	position: relative;
+
+	
+	&::before {
+		content: '';
+		margin: 0 auto;
+		position: absolute;
+		background-color: ${({ lineColor }) => lineColor};
+		height: calc(100% + 1em);
+		width: 1px;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
 `;
 
 export const IconWrapper = styled.div`
@@ -22,23 +35,13 @@ export const IconWrapper = styled.div`
 	border-radius: 50%;
 	z-index: 50;
 
-	&::before {
-		content: '';
-		margin: 0 auto;
-		position: absolute;
-		background-color: ${({ lineColor }) => lineColor};
-		height: 185px;
-		width: 1px;
-		top: 100%;
-		left: 0;
-		right: 0;
-	}
 `;
 
 export const TimelineDetailsContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	min-height: 240px;
+	row-gap: 1em;
 `;
 
 export const PeriodWrapper = styled.div`
@@ -54,7 +57,7 @@ export const Period = styled.span`
 `;
 
 export const Title = styled.p`
-	font-size: 1.3rem;
+	font-size: clamp(0.8rem, 1vw + 0.6rem, 1.3rem);
 	font-weight: 700;
 	color: ${({ color }) => color};
 	text-transform: uppercase;
@@ -68,7 +71,7 @@ export const Subtitle = styled.span`
 `;
 
 export const Description = styled.p`
-	font-size: 1.1rem;
+	font-size: clamp(0.5rem, 0.75vw + 0.6rem, 1.1rem);
 	font-weight: 400;
 	color: ${({ color }) => color};
 	margin: 0;

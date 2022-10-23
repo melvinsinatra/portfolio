@@ -19,21 +19,21 @@ export const ModalWrapper = styled.div`
 `
 
 export const ModalContainer = styled.div`
-  width: 75%;
-  height: 90%;
+  width: ${({ isMobile }) => isMobile ? '100%' : '75%'};
+  height: ${({ isMobile }) => isMobile ? '100%' : '90%'};
   max-width: 3072px;
   border: 1px solid;
   border-color: ${({ borderColor }) => borderColor};
   background-color: ${({ bgColor }) => bgColor};
-  border-radius: 16px;
+  border-radius: ${({ isMobile }) => isMobile ? '0' : '16px'};
   opacity: 1;
   position: absolute;
-  top: 2em;
+  top: ${({ isMobile }) => isMobile ? '0' : '2em'};
   left: 50%;
   transform: translate(-50%, 0);
   display: flex;
   flex-direction: column;
-  padding: 1.5em;
+  padding: ${({ p }) => p};
 `
 
 export const ModalHeader = styled.div`
@@ -70,8 +70,10 @@ export const CloseButton = styled.button`
 export const ModalBody = styled.div`
   flex: 50%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2em;
+  grid-template-columns: ${({ isMobile }) => isMobile ? 
+  'repeat(2, minmax(min(100%, 171px), 1fr))' : 
+  'repeat(5, minmax(min(100%, 171px), 1fr))'};
+  grid-gap: ${({ gap }) => gap};
   grid-auto-rows: 294px;
   overflow: auto;
 `

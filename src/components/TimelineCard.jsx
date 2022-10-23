@@ -23,8 +23,8 @@ const TimelineCard = ({ period, title, subtitle, description }) => {
 
 	return (
 		<TimelineCardContainer>
-			<IconContainer>
-				<IconWrapper bgColor={COLOR_PRIMARY_MAIN} color={COLOR_COMMON_WHITE} lineColor={COLOR_GREY_500}>
+			<IconContainer lineColor={COLOR_GREY_500}>
+				<IconWrapper bgColor={COLOR_PRIMARY_MAIN} color={COLOR_COMMON_WHITE}>
 					<FaBook className="icon--sm" />
 				</IconWrapper>
 			</IconContainer>

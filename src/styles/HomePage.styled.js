@@ -9,16 +9,21 @@ export const PrimaryContainer = styled.div`
 
 export const ImageWrapper = styled.div`
 	background-color: ${({ bg }) => bg};
-	border-radius: 25px;
-	width: 81%;
-	height: 95%;
+	background-image: ${({ bgImage }) => `url(${bgImage})`};
+	background-size: cover;
+	object-fit: cover;
+	border-radius: ${({ isMobile }) => (isMobile ? '0px' : '25px')};
+	width: ${({ isMobile }) => (isMobile ? '100vw' : '81%')};
+	height: ${({ isMobile }) => (isMobile ? '45vh' : '95%')};
+	z-index: -500;
 `;
 
 export const HeroImage = styled.img`
 	width: 100%;
 	height: 100%;
 	filter: saturate(0);
-	object-fit: cover;
+	object-fit: contain;
+	z-index: -500;
 
 	&:hover {
 		filter: saturate(100%);
@@ -39,17 +44,21 @@ export const HeroTextWrapper = styled.div`
 
 export const HeroHeading = styled.h1`
 	margin: 0;
-	font-size: 3rem;
+	font-size: clamp(1rem, 3vw + 1rem, 3rem);
 	font-weight: 700;
 	color: ${({ color }) => color};
+	text-align: ${({ isMobile }) => isMobile && 'center'};
+	padding-block: ${({ isMobile }) => isMobile && '5em'};
 `;
 
 export const HeroBodyText = styled.p`
-	font-size: 1.1rem;
+	font-size: clamp(0.5rem, 0.75vw + 0.6rem, 1.1rem);
 	font-weight: 700;
 	line-height: auto;
 	color: ${({ color }) => color || 'inherit'};
 	font-family: Poppins, sans-serif;
+	text-align: ${({ isMobile }) => isMobile && 'center'};
+	padding-block: ${({ isMobile }) => isMobile && '5em'};
 `;
 
 export const ClipPath = styled.div`
