@@ -8,6 +8,9 @@ import Tailwind from '../assets/SVGs/Tailwind.svg'
 import Android from '../assets/SVGs/Android.svg'
 import MaterialUI from '../assets/SVGs/MaterialUI.svg'
 import React from '../assets/SVGs/React.svg'
+import MongoDB from '../assets/SVGs/MongoDB.svg'
+import ExpressJS from '../assets/SVGs/ExpressJS.svg'
+import NodeJS from '../assets/SVGs/NodeJS.svg'
 
 export const education = [
 	{
@@ -75,6 +78,18 @@ export const skills = [
 	{
 		image: Bootstrap,
 		name: 'Bootstrap'
+	},
+	{
+		image: MongoDB,
+		name: 'MongoDB'
+	},
+	{
+		image: ExpressJS,
+		name: 'Express.js'
+	},
+	{
+		image: NodeJS,
+		name: 'Node.js'
 	},
 ]
 
