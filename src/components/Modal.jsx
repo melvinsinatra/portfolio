@@ -21,7 +21,7 @@ const Modal = ({ handleClick }) => {
 	return (
 		<ModalBackground bgColor={COLOR_BACKGROUND_DEFAULT}>
 			<ModalWrapper>
-				<ModalContainer isMobile={isMobile} p={isMobile && '.5em'} bgColor={COLOR_BACKGROUND_DEFAULT} borderColor={COLOR_PRIMARY_MAIN}>
+				<ModalContainer isMobile={isMobile} p={'.5em'} bgColor={COLOR_BACKGROUND_DEFAULT} borderColor={COLOR_PRIMARY_MAIN}>
 					<ModalHeader>
 						<SubHeading>My Skill Set</SubHeading>
 						<CloseButtonWrapper>
