@@ -32,8 +32,7 @@ const ContactMe = () => {
 					<SubContainer flex="1">
 						<SubHeading color={COLOR_TEXT_PRIMARY}>Contact Me</SubHeading>
 						<BodyText color={COLOR_TEXT_PRIMARY}>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, quis vel obcaecati dolorem molestiae, blanditiis sint praesentium hic
-							aspernatur esse pariatur odio fuga aut nemo.
+							Here are my contacts and socials. Feel free to contact me anytime! I'll try to contact back ASAP ^_^
 						</BodyText>
 						{/* Info Detail */}
 						<Flex py=".5em" colGap="1em" alignItems="center">

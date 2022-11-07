@@ -17,14 +17,14 @@ export const education = [
 		period: '2017 - 2020',
 		title: 'Pax Patriae High School',
 		subtitle: 'Science Major',
-		description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, exercitationem quos. Fugit repellat iste maxime itaque sapiente voluptas molestias saepe inventore accusamus impedit, facere provident!'
+		description: "Reached the top 4% throughout the science major; Participated in various inter-school competitions; Participated in 'Olimpiade Sains Nasional', city division."
 	},
 	{
 		period: '2020 - Present',
 		title: 'Binus University',
 		subtitle: 'Undergraduate, Business Information Technology Major',
 		description:
-			'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, asperiores sunt doloribus quos in aut nobis corrupti dolores ullam debitis quisquam sint excepturi laudantium cumque?'
+			'3.85 GPA; Participated and won various UI/UX design competitions, as well as a business case competition; Received the award for Outstanding School of Information Systems Student 2022.'
 	}
 ];
 
@@ -34,7 +34,7 @@ export const experience = [
 		title: 'Binus University',
 		subtitle: 'Part-time Laboratory Teaching Assistant',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero similique voluptatibus facilis ullam rem nobis molestias ducimus corporis! Consectetur ad minima ea corporis nesciunt quos.'
+			'Responsible for delivering and presenting course materials to freshmen students; And also examining and giving grades to their assignments.'
 	}
 ];
 
@@ -121,37 +121,37 @@ export const projects = [
 	{
 		thumbnail: 'https://i.ibb.co/vwNkZs0/Apple-Porto-1.png',
 		title: 'Janji-Jywa',
-		description: 'Point of sales application made with Java',
+		description: 'Point of sales application made with Java Swing',
 		link: 'https://github.com/melvinsinatra/business-app-development-project'
 	},
 	{
 		thumbnail: 'https://i.ibb.co/JvKyXQq/Apple-Porto-2.png',
 		title: 'Genshin Impact Gacha Simulator',
-		description: 'Unofficial Gacha Simulator made with Android Studio (Java)',
+		description: 'Unofficial Gacha Simulator Game, made with Android Studio (Java)',
 		link: 'https://github.com/melvinsinatra/GenshinImpactGachaSimulator'
 	},
 	{
 		thumbnail: 'https://i.ibb.co/10NJLYF/Apple-Porto-3.png',
 		title: 'FindTheHantu',
-		description: '2D Action Maze Chase Game made with Java',
+		description: '2D Action Maze Chase Game made with Java Graphics',
 		link: 'https://github.com/melvinsinatra/FindTheHantu'
 	},
 	{
 		thumbnail: 'https://i.ibb.co/gJYbp1D/Apple-Porto-4.png',
 		title: 'MyMeds',
-		description: 'Simple CRUD Application, made with Android Studio (Java)',
+		description: 'Simple CRUD Application with SQLite database, made with Android Studio (Java)',
 		link: 'https://github.com/melvinsinatra/FindTheHantu'
 	},
 	{
 		thumbnail: 'https://i.ibb.co/0XM5Q3R/Apple-Porto-5.png',
 		title: 'TebakYuk',
-		description: 'Simple number guessing game made with Java',
+		description: 'Simple number guessing game made with Java Swing',
 		link: 'https://github.com/melvinsinatra/TebakYuk'
 	},
 	{
 		thumbnail: 'https://i.ibb.co/4KDjRWP/Youtube-Clone.png',
 		title: 'Youtube Clone',
-		description: 'Clone of Youtube, made using ReactJS and Material UI',
+		description: 'Front-end Clone of Youtube, made using ReactJS and Material UI',
 		link: 'https://github.com/melvinsinatra/youtube-clone'
 	},
 	{
@@ -159,6 +159,18 @@ export const projects = [
 		title: 'Huddle Landing Page',
 		description: 'A simple landing page, made using ReactJS and styled-components',
 		link: 'https://github.com/melvinsinatra/huddle-landing-page'
+	},
+	{
+		thumbnail: 'https://i.ibb.co/hyvkp44/Perpus-Online.png',
+		title: 'Perpus Online',
+		description: 'Book-borrowing Android Application (Java) with CRUD, JSON API, and Google Maps API',
+		link: 'https://github.com/melvinsinatra/perpus-online'
+	},
+	{
+		thumbnail: 'https://i.ibb.co/3hWVGVw/CRUD-Blog-App.png',
+		title: 'Full-Stack CRUD Blog App',
+		description: 'made using MongoDB, Express.js, ReactJS, Node.js, and Tailwind CSS',
+		link: 'https://github.com/melvinsinatra/perpus-online'
 	},
 
 ]

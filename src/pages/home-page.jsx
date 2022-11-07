@@ -38,10 +38,6 @@ const HomePage = () => {
 								<br /> Enthusiast, and An
 								<br /> <EmphasizedText color={COLOR_PRIMARY_MAIN}>Aspiring Software Engineer</EmphasizedText>
 							</HeroHeading>
-							<HeroBodyText className="animate__animated animate__slideInDown" isMobile={isMobile} color={COLOR_TEXT_PRIMARY}>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias neque aspernatur ipsa, soluta id suscipit dolorum provident quibusdam
-								asperiores, optio debitis obcaecati adipisci atque repellat.
-							</HeroBodyText>
 							<Button className={'animate__animated animate__slideInUp'} Icon={FaCloudDownloadAlt}>
 								Download CV
 							</Button>

@@ -60,15 +60,14 @@ const AboutMe = () => {
 					<MyInformationContainer>
 						<SubHeading color={COLOR_TEXT_PRIMARY}>Information About Me</SubHeading>
 						<BodyText color={COLOR_TEXT_PRIMARY}>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor
-							rhoncus dolor purus non enim praesent elementum facilisis leo, vel
+						I am a student, studying in BINUS University @Bekasi, Majoring in Business Information Technology. I am intending to pursue my goal as a professional developer/ software engineer. I am relaxed, and I work with carefully planned decision making to obtain the best outcome. I have a somewhat passive attitude, and only go proactive when needed. I try to interact with people to build a strong relationship so that everyone can be surrounded by positive vibes.
 						</BodyText>
 						<Button Icon={FaCloudDownloadAlt}>Download CV</Button>
 					</MyInformationContainer>
 					<StatsContainer gap={isMobile ? '1em' : '2.5em'}>
 						<StatCard title="GPA" subtitle="3.85" />
 						<StatCard title="Hobbies" subtitle="Web and App Development" />
-						<StatCard title="9+" subtitle="Projects Completed" />
+						<StatCard title="9" subtitle="Projects Completed" />
 						<StatCard title="4+" subtitle="Achievements" />
 					</StatsContainer>
 				</Container>

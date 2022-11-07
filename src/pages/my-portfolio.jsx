@@ -32,7 +32,7 @@ const MyPortfolio = () => {
 				<br />
 				Work
 			</DarkBackgroundTitle>
-			<PageContainer className="animate__animated animate__fadeIn" pB={isMobile && '6em'} flexDirection="column" rowGap="2em">
+			<PageContainer className="animate__animated animate__fadeIn" pB={isMobile ? '6em' : '2.5em'} flexDirection="column" rowGap="2em">
 				{/**
 				 * Page Title
 				 */}
