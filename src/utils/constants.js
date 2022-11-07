@@ -169,8 +169,8 @@ export const projects = [
 	{
 		thumbnail: 'https://i.ibb.co/3hWVGVw/CRUD-Blog-App.png',
 		title: 'Full-Stack CRUD Blog App',
-		description: 'made using MongoDB, Express.js, ReactJS, Node.js, and Tailwind CSS',
-		link: 'https://github.com/melvinsinatra/perpus-online'
+		description: '(Work in Progress) made using MongoDB, Express.js, ReactJS, Node.js, and Tailwind CSS',
+		link: 'https://github.com/melvinsinatra/crud-blog-app'
 	},
 
 ]
