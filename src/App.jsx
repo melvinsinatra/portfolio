@@ -16,7 +16,7 @@ function App() {
 				<ThemeButton />
 				<Navbar />
 				<Routes>
-					<Route path="/" element={isMobile ? <MobileHomePage /> : <HomePage />} />
+					<Route path="/" element={<HomePage />} />
 					<Route path="/about-me" element={<AboutMe />} />
 					<Route path="/my-portfolio" element={<MyPortfolio />} />
 					<Route path="/contact-me" element={<ContactMe />} />
