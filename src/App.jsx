@@ -2,7 +2,7 @@ import './App.css';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import { HomePage, AboutMe, MyPortfolio, ContactMe } from './pages';
 import { useContext } from 'react';
-import { ThemeContext, ThemeModeContext } from './contexts/ThemeContext';
+import { ThemeContext } from './contexts/ThemeContext';
 import { ThemeButton, Navbar } from './components';
 import MobileHomePage from './pages/mobile-home-page';
 

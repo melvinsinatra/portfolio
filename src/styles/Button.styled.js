@@ -21,7 +21,7 @@ export const IconWrapper = styled.div`
 	padding: 1em;
 `;
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.a`
 	font-size: 1.1rem;
 	font-weight: 700;
 	color: ${({ colorTextPrimary }) => colorTextPrimary || 'inherit'};

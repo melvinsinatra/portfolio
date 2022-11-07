@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 import { ButtonWrapper, StyledButton, IconWrapper } from '../styles/Button.styled';
 
-const Button = ({ Icon, className, children }) => {
+const Button = ({ Icon, className, href, children }) => {
 	const theme = useContext(ThemeContext);
 
 	const COLOR_PRIMARY_MAIN = theme.palette.primary.main;
@@ -13,7 +13,7 @@ const Button = ({ Icon, className, children }) => {
 
 	return (
 		<ButtonWrapper className={className || ''}>
-			<StyledButton primaryColor={COLOR_PRIMARY_MAIN} colorTextPrimary={COLOR_TEXT_PRIMARY} colorWhite={COLOR_WHITE}>
+			<StyledButton href={href} target="_blank" primaryColor={COLOR_PRIMARY_MAIN} colorTextPrimary={COLOR_TEXT_PRIMARY} colorWhite={COLOR_WHITE}>
 				{children}
 			</StyledButton>
 			<IconWrapper bg={COLOR_PRIMARY_MAIN}>

@@ -60,9 +60,14 @@ const AboutMe = () => {
 					<MyInformationContainer>
 						<SubHeading color={COLOR_TEXT_PRIMARY}>Information About Me</SubHeading>
 						<BodyText color={COLOR_TEXT_PRIMARY}>
-						I am a student, studying in BINUS University @Bekasi, Majoring in Business Information Technology. I am intending to pursue my goal as a professional developer/ software engineer. I am relaxed, and I work with carefully planned decision making to obtain the best outcome. I have a somewhat passive attitude, and only go proactive when needed. I try to interact with people to build a strong relationship so that everyone can be surrounded by positive vibes.
+							I am a student, studying in BINUS University @Bekasi, Majoring in Business Information Technology. I am intending to pursue my goal as a
+							professional developer/ software engineer. I am relaxed, and I work with carefully planned decision making to obtain the best outcome. I have
+							a somewhat passive attitude, and only go proactive when needed. I try to interact with people to build a strong relationship so that everyone
+							can be surrounded by positive vibes.
 						</BodyText>
-						<Button Icon={FaCloudDownloadAlt}>Download CV</Button>
+						<Button Icon={FaCloudDownloadAlt} href="https://drive.google.com/file/d/1iyBZlnPIYBM_6F5mXpVvNzXzmV2-Mmlt/view">
+							Download CV
+						</Button>
 					</MyInformationContainer>
 					<StatsContainer gap={isMobile ? '1em' : '2.5em'}>
 						<StatCard title="GPA" subtitle="3.85" />
@@ -91,7 +96,7 @@ const AboutMe = () => {
 					<SubHeading color={COLOR_TEXT_PRIMARY} textAlign="center">
 						My Skill Set
 					</SubHeading>
-					<SkillsContainer gap={ isMobile ? '.5em' : '2em'} isMobile={isMobile}>
+					<SkillsContainer gap={isMobile ? '.5em' : '2em'} isMobile={isMobile}>
 						{skillCardEls}
 						{
 							<SkillCard handleClick={handleOpenModal} cursorPointer={true} name="More.." svgIcon={true}>

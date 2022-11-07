@@ -11,7 +11,7 @@ import { PageContainer } from '../styles/Layouts.styled';
 import { ClipPath, ImageWrapper } from './../styles/HomePage.styled';
 import { EmphasizedText } from './../styles/Typographies.styled';
 
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { FaCloudDownloadAlt } from 'react-icons/fa';
 
 const HomePage = () => {
@@ -24,26 +24,30 @@ const HomePage = () => {
 	return (
 		<>
 			{!isMobile && <ClipPath bg={COLOR_PRIMARY_MAIN}></ClipPath>}
-				<PageContainer flexDir={!isMobile ? 'row' : 'column'}>
-					<PrimaryContainer className="animate__animated animate__slideInLeft" isMobile={isMobile}>
-						<ImageWrapper bg="#000" bgImage={CampusImage} isMobile={isMobile}>
-							<HeroImage src={Image} alt="Hero Image" />
-						</ImageWrapper>
-					</PrimaryContainer>
-					<SecondaryContainer>
-						<HeroTextWrapper>
-							<HeroHeading className="animate__animated animate__slideInDown" isMobile={isMobile} color={COLOR_TEXT_PRIMARY}>
-								Hi, i'm <EmphasizedText color={COLOR_PRIMARY_MAIN}>Melvin Sinatra</EmphasizedText>.<br />
-								Tech and Development
-								<br /> Enthusiast, and An
-								<br /> <EmphasizedText color={COLOR_PRIMARY_MAIN}>Aspiring Software Engineer</EmphasizedText>
-							</HeroHeading>
-							<Button className={'animate__animated animate__slideInUp'} Icon={FaCloudDownloadAlt}>
-								Download CV
-							</Button>
-						</HeroTextWrapper>
-					</SecondaryContainer>
-				</PageContainer>
+			<PageContainer flexDir={!isMobile ? 'row' : 'column'}>
+				<PrimaryContainer className="animate__animated animate__slideInLeft" isMobile={isMobile}>
+					<ImageWrapper bg="#000" bgImage={CampusImage} isMobile={isMobile}>
+						<HeroImage src={Image} alt="Hero Image" />
+					</ImageWrapper>
+				</PrimaryContainer>
+				<SecondaryContainer>
+					<HeroTextWrapper>
+						<HeroHeading className="animate__animated animate__slideInDown" isMobile={isMobile} color={COLOR_TEXT_PRIMARY}>
+							Hi, i'm <EmphasizedText color={COLOR_PRIMARY_MAIN}>Melvin Sinatra</EmphasizedText>.<br />
+							Tech and Development
+							<br /> Enthusiast, and An
+							<br /> <EmphasizedText color={COLOR_PRIMARY_MAIN}>Aspiring Software Engineer</EmphasizedText>
+						</HeroHeading>
+						<Button
+							className={'animate__animated animate__slideInUp'}
+							Icon={FaCloudDownloadAlt}
+							href="https://drive.google.com/file/d/1iyBZlnPIYBM_6F5mXpVvNzXzmV2-Mmlt/view"
+						>
+							Download CV
+						</Button>
+					</HeroTextWrapper>
+				</SecondaryContainer>
+			</PageContainer>
 		</>
 	);
 };
