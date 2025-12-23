@@ -3,7 +3,7 @@
   import data from "$lib/data/profile.json";
   import Hero from "$lib/components/Hero.svelte";
   import About from "$lib/components/About.svelte";
-  import Timeline from "$lib/components/Timeline.svelte";
+  import Experience from "$lib/components/Experience.svelte";
   import Projects from "$lib/components/Projects.svelte";
   import Skills from "$lib/components/Skills.svelte";
   import Services from "$lib/components/Services.svelte";
@@ -15,7 +15,7 @@
   <About {data} />
   <Skills {data} />
   <Services {data} />
-  <Timeline {data} />
+  <Experience {data} />
   <Projects {data} />
   <Footer {data} />
 </main>
