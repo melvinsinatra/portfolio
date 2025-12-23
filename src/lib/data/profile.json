@@ -21,7 +21,11 @@
       "role": "Laboratory Teaching Assistant",
       "company": "Binus University",
       "employmentType": "Part-Time",
-      "description": "Learned programming fundamentals."
+      "descriptionListItems": [
+        "Led and taught hands-on practical classes, mentoring students in applying theoretical concepts.",
+        "Helped students grasp and apply system development methodologies.",
+        "Assessed student assignments and provided constructive feedback with course requirements."
+      ]
     },
     {
       "period": "Feb 2023 - Feb 2024",
@@ -29,7 +33,11 @@
       "role": "Software Engineer Intern",
       "company": "PT Kamoro Maxima Integra",
       "employmentType": "Internship",
-      "description": "Led frontend development in startup environment."
+      "descriptionListItems": [
+        "Collaborated with cross-functional teams to develop and deploy an system management application for a well-known mining company based in North America using C# .NET, MSSQL, and Flutter.",
+        "Created and improved on existing project documentations, such as Functional Design documents, and API contract documents.",
+        "Contributed to full-stack development of an internal Leave Management System integrated with an on-premise web application for one of the leading mining company in Indonesia."
+      ]
     },
     {
       "period": "Feb 2024 - Present",
@@ -37,7 +45,12 @@
       "role": "Software Engineer",
       "company": "PT Kamoro Maxima Integra",
       "employmentType": "Contract",
-      "description": "Commercial web development projects."
+      "descriptionListItems": [
+        "Contributed to the development and delivery of of 5 web/mobile application projects.",
+        "Collaborated with cross-functional teams internationally to translate business requirements into technical solutions.Collaborated with cross-functional teams internationally to translate business requirements into technical solutions.",
+        "Helped standardize and modernize an existing web application using Azure, C#, .NET, and Cosmos DB.",
+        "Utilized various Microsoft Azure services such as Azure Data Explorer, Event Hubs, Key Vaults, Entra ID, App Services."
+      ]
     }
   ],
   "projects": [
