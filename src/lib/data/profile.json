@@ -1,0 +1,58 @@
+{
+  "name": "Melvin Sinatra",
+  "role": "Full-Stack Developer",
+  "summary": "Full-stack developer with experience in building web/mobile applications leveraging Microsoft Azure resources. ",
+  "about": "Hello! I'm a Full-Stack Developer with a specialization in developing internal custom applications that utilizes Microsoft Azure Architecture. \n\nI'm experienced in using .NET framework for building web apps and back-end services - and also Flutter for both Mobile and Web applications. \n\nI'm proficient in developing and deploying applications using a diverse range of Microsoft Azure resources, such as Azure DevOps, Microsoft Entra ID, MSSQL, Azure Function Apps, Redis Cache, Cosmos DB, Event Hubs, Azure Data Explorer, Key Vaults. \n\nI'm aspiring to grow into a tech lead role that focuses on solving complex problems, collaborating across teams, and leading technological innovation.",
+  "heroImage": "/images/hero-image.png",
+  "timelines": [
+    {
+      "period": "Feb 2022 - Feb 2023",
+      "startDate": "2022-02-01T00:00:00Z",
+      "role": "Laboratory Teaching Assistant",
+      "company": "Binus University",
+      "employmentType": "Part-Time",
+      "description": "Learned programming fundamentals."
+    },
+    {
+      "period": "Feb 2023 - Feb 2024",
+      "startDate": "2023-02-01T00:00:00Z",
+      "role": "Software Engineer Intern",
+      "company": "PT Kamoro Maxima Integra",
+      "employmentType": "Internship",
+      "description": "Led frontend development in startup environment."
+    },
+    {
+      "period": "Feb 2024 - Present",
+      "startDate": "2024-02-01T00:00:00Z",
+      "role": "Software Engineer",
+      "company": "PT Kamoro Maxima Integra",
+      "employmentType": "Contract",
+      "description": "Commercial web development projects."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Lorem Ipsum Title",
+      "description": "Lorem Ipsum Desc."
+    },
+    {
+      "title": "Lorem Ipsum Title",
+      "description": "Lorem Ipsum Desc."
+    }
+  ],
+  "skills": {
+    "frontend": ["Flutter", ".NET Web", "React", "Javascript", "jQuery", "Svelte"],
+    "backend": [".NET", "MSSQL"],
+    "tools": ["Git", "GitHub", "Azure", "Azure DevOps"]
+  },
+  "services": [
+    "Web Development",
+    "Mobile App Development",
+    "Front-end",
+    "Back-end",
+    "Databases"
+  ],
+  "contact": {
+    "email": "melvin.sinatra2002@gmail.com"
+  }
+}
