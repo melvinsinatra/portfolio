@@ -13,6 +13,7 @@
       <h1 class="text-4xl md:text-6xl font-bold">{data.role}</h1>
       <p class="max-w-xl text-gray-400">{data.summary}</p>
 
+      <!-- Contact Section -->
       <div class="flex gap-4 pt-4">
         <a
           href={data.contact.github}
@@ -44,7 +45,15 @@
       </div>
 
       <div class="flex items-center gap-2 pt-4 text-gray-400">
-        <FontAwesomeIcon icon={faLocationDot} size="lg" />
+        <a
+          href={data.contact.locationURL}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gray-400 hover:text-accent transition"
+          aria-label="Location"
+          >
+          <FontAwesomeIcon icon={faLocationDot} size="lg" />
+        </a>
         <span>
           {data.contact.city}, {data.contact.state}, {data.contact.country}
         </span>
