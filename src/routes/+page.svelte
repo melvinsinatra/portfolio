@@ -13,9 +13,9 @@
 <main class="max-w-6xl mx-auto px-6 space-y-32">
   <Hero {data} />
   <About {data} />
-  <Timeline {data} />
-  <Projects {data} />
   <Skills {data} />
   <Services {data} />
+  <Timeline {data} />
+  <Projects {data} />
   <Footer {data} />
 </main>
