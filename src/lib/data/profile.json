@@ -1,5 +1,14 @@
 {
-  "name": "Melvin Sinatra",
+  "contact": {
+    "fullName": "Melvin Sinatra",
+    "email": "melvin.sinatra2002@gmail.com",
+    "phoneNumber": "+62-812-1942-2630",
+    "linkedin": "https://www.linkedin.com/in/melvin-sinatra-7bb912151/",
+    "github": "https://github.com/melvinsinatra",
+    "country": "Indonesia",
+    "state": "West Java",
+    "city": "Jakarta"
+  },
   "role": "Full-Stack Developer",
   "summary": "Full-stack developer with experience in building web/mobile applications leveraging Microsoft Azure resources. ",
   "about": "Hello! I'm a Full-Stack Developer with a specialization in developing internal custom applications that utilizes Microsoft Azure Architecture. \n\nI'm experienced in using .NET framework for building web apps and back-end services - and also Flutter for both Mobile and Web applications. \n\nI'm proficient in developing and deploying applications using a diverse range of Microsoft Azure resources, such as Azure DevOps, Microsoft Entra ID, MSSQL, Azure Function Apps, Redis Cache, Cosmos DB, Event Hubs, Azure Data Explorer, Key Vaults. \n\nI'm aspiring to grow into a tech lead role that focuses on solving complex problems, collaborating across teams, and leading technological innovation.",
@@ -51,8 +60,5 @@
     "Front-end",
     "Back-end",
     "Databases"
-  ],
-  "contact": {
-    "email": "melvin.sinatra2002@gmail.com"
-  }
+  ]
 }
