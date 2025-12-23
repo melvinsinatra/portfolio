@@ -46,7 +46,7 @@
       "company": "PT Kamoro Maxima Integra",
       "employmentType": "Contract",
       "descriptionListItems": [
-        "Contributed to the development and delivery of of 5 web/mobile application projects.",
+        "Contributed to the development and delivery of 5 web/mobile application projects.",
         "Collaborated with cross-functional teams internationally to translate business requirements into technical solutions.Collaborated with cross-functional teams internationally to translate business requirements into technical solutions.",
         "Helped standardize and modernize an existing web application using Azure, C#, .NET, and Cosmos DB.",
         "Utilized various Microsoft Azure services such as Azure Data Explorer, Event Hubs, Key Vaults, Entra ID, App Services."
@@ -55,17 +55,32 @@
   ],
   "projects": [
     {
-      "title": "Lorem Ipsum Title",
-      "description": "Lorem Ipsum Desc."
+      "title": "FCTS ([REDACTED] Connected Telemetry Streaming)",
+      "description": "FCTS delivers sensor data from across our company to the Azure environment in real time. Sources include systems like PI, Canary, Leach Temperature Probes and more. The FCTS System makes it easy for Data Science to access and interrogate any IoT source in a standard way.",
+      "image": "/images/fcts.png",
+      "tech": ["Azure Event Hubs", "Redis Cache", "Cosmos DB", "Azure Data Explorer", "Azure Function Apps (.NET)"],
+      "repo": null,
+      "startDate": "2025-01-01T00:00:00Z"
     },
     {
-      "title": "Lorem Ipsum Title",
-      "description": "Lorem Ipsum Desc."
+      "title": "Connected Operations",
+      "description": "A cross-platform (mobile and web) dashboard application built with Flutter, leveraging the Syncfusion library to deliver rich data visualizations for mining operations, including truck loads, operator details, and equipment KPIs.",
+      "image": "/images/connected-operations.png",
+      "tech": ["Azure SQL Managed Instance", "Flutter", "Azure Function Apps (.NET)"],
+      "repo": null,
+      "startDate": "2023-01-01T00:00:00Z"
     }
   ],
   "skills": {
-    "frontend": ["Flutter", ".NET Web", "React", "Javascript", "jQuery", "Svelte"],
-    "backend": [".NET", "MSSQL"],
+    "frontend": [
+      "Flutter",
+      ".NET Framework",
+      "React",
+      "Javascript",
+      "jQuery",
+      "Svelte"
+    ],
+    "backend": [".NET Framework", "MSSQL"],
     "tools": ["Git", "GitHub", "Azure", "Azure DevOps"]
   },
   "services": [

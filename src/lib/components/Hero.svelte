@@ -66,7 +66,7 @@
         {#if data.heroImage}
           <img
             src={data.heroImage}
-            alt="Profile photo"
+            alt="Profile"
             loading="lazy"
             class="grayscale hover:grayscale-0 transition duration-300 ease-in-out"
           />
