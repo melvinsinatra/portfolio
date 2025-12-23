@@ -64,8 +64,8 @@
     }
   ],
   "skills": {
-    "frontend": ["Flutter", ".NET Web", "React", "Javascript", "jQuery", "Svelte"],
-    "backend": [".NET", "MSSQL"],
+    "frontend": ["Flutter", ".NET Framework", "React", "Javascript", "jQuery", "Svelte"],
+    "backend": [".NET Framework", "MSSQL"],
     "tools": ["Git", "GitHub", "Azure", "Azure DevOps"]
   },
   "services": [
