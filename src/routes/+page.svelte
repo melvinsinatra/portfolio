@@ -10,13 +10,11 @@
   import Experience from "$lib/components/Experience.svelte";
   import Projects from "$lib/components/Projects.svelte";
   import Skills from "$lib/components/Skills.svelte";
-  import Services from "$lib/components/Services.svelte";
   import Footer from "$lib/components/Footer.svelte";
 
   let hero;
   let about;
   let skills;
-  let services;
   let experience;
   let projects;
   let footer;
@@ -28,7 +26,6 @@
       hero,
       about,
       skills,
-      services,
       experience,
       projects,
       footer
@@ -65,10 +62,6 @@
 
   <div bind:this={skills}>
     <Skills {data} />
-  </div>
-
-  <div bind:this={services}>
-    <Services {data} />
   </div>
 
   <div bind:this={experience}>

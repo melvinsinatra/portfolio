@@ -82,12 +82,5 @@
     ],
     "backend": [".NET Framework", "MSSQL"],
     "tools": ["Git", "GitHub", "Azure", "Azure DevOps"]
-  },
-  "services": [
-    "Web Development",
-    "Mobile App Development",
-    "Front-end",
-    "Back-end",
-    "Databases"
-  ]
+  }
 }
