@@ -1,9 +1,12 @@
-import adapter from "@sveltejs/adapter-static";
-import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
+import adapter from '@sveltejs/adapter-static';
 
 export default {
-  preprocess: vitePreprocess(),
   kit: {
-    adapter: adapter()
-  },
+    adapter: adapter({
+      fallback: null
+    }),
+    paths: {
+      base: process.env.BASE_PATH || ''
+    }
+  }
 };
