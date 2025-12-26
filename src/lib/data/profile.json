@@ -14,7 +14,7 @@
   "role": "Full-Stack Developer",
   "summary": "Full-stack developer with experience in building web/mobile applications leveraging Microsoft Azure resources. ",
   "about": "Hello! I'm a Full-Stack Developer with a specialization in developing internal custom applications that utilizes Microsoft Azure Architecture. \n\nI'm experienced in using .NET framework for building web apps and back-end services - and also Flutter for both Mobile and Web applications. \n\nI'm proficient in developing and deploying applications using a diverse range of Microsoft Azure resources, such as Azure DevOps, Microsoft Entra ID, MSSQL, Azure Function Apps, Redis Cache, Cosmos DB, Event Hubs, Azure Data Explorer, Key Vaults. \n\nI'm aspiring to grow into a tech lead role that focuses on solving complex problems, collaborating across teams, and leading technological innovation.",
-  "heroImage": "/images/hero-image.png",
+  "heroImage": "images/hero-image.png",
   "timelines": [
     {
       "period": "Feb 2022 - Feb 2023",
@@ -58,7 +58,7 @@
     {
       "title": "FCTS ([REDACTED] Connected Telemetry Streaming)",
       "description": "FCTS delivers sensor data from across our company to the Azure environment in real time. Sources include systems like PI, Canary, Leach Temperature Probes and more. The FCTS System makes it easy for Data Science to access and interrogate any IoT source in a standard way.",
-      "image": "/images/fcts.png",
+      "image": "images/fcts.png",
       "tech": ["Azure Event Hubs", "Redis Cache", "Cosmos DB", "Azure Data Explorer", "Azure Function Apps (.NET)"],
       "repo": null,
       "startDate": "2025-01-01T00:00:00Z"
@@ -66,7 +66,7 @@
     {
       "title": "Connected Operations",
       "description": "A cross-platform (mobile and web) dashboard application built with Flutter, leveraging the Syncfusion library to deliver rich data visualizations for mining operations, including truck loads, operator details, and equipment KPIs.",
-      "image": "/images/connected-operations.png",
+      "image": "images/connected-operations.png",
       "tech": ["Azure SQL Managed Instance", "Flutter", "Azure Function Apps (.NET)"],
       "repo": null,
       "startDate": "2023-01-01T00:00:00Z"
