@@ -5,12 +5,14 @@
 
   import "../app.css";
   import data from "$lib/data/profile.json";
-  import Hero from "$lib/components/Hero.svelte";
+  
   import About from "$lib/components/About.svelte";
+  import DownloadCVFAB from "$lib/components/DownloadCVFAB.svelte";
   import Experience from "$lib/components/Experience.svelte";
+  import Footer from "$lib/components/Footer.svelte";
+  import Hero from "$lib/components/Hero.svelte";
   import Projects from "$lib/components/Projects.svelte";
   import Skills from "$lib/components/Skills.svelte";
-  import Footer from "$lib/components/Footer.svelte";
 
   let hero;
   let about;
@@ -75,4 +77,6 @@
   <div bind:this={footer}>
     <Footer {data} />
   </div>
+
+  <DownloadCVFAB {data} />
 </main>
