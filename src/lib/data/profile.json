@@ -54,24 +54,7 @@
       ]
     }
   ],
-  "projects": [
-    {
-      "title": "FCTS ([REDACTED] Connected Telemetry Streaming)",
-      "description": "FCTS delivers sensor data from across our company to the Azure environment in real time. Sources include systems like PI, Canary, Leach Temperature Probes and more. The FCTS System makes it easy for Data Science to access and interrogate any IoT source in a standard way.",
-      "image": "images/fcts.png",
-      "tech": ["Azure Event Hubs", "Redis Cache", "Cosmos DB", "Azure Data Explorer", "Azure Function Apps (.NET)"],
-      "repo": null,
-      "startDate": "2025-01-01T00:00:00Z"
-    },
-    {
-      "title": "Connected Operations",
-      "description": "A cross-platform (mobile and web) dashboard application built with Flutter, leveraging the Syncfusion library to deliver rich data visualizations for mining operations, including truck loads, operator details, and equipment KPIs.",
-      "image": "images/connected-operations.png",
-      "tech": ["Azure SQL Managed Instance", "Flutter", "Azure Function Apps (.NET)"],
-      "repo": null,
-      "startDate": "2023-01-01T00:00:00Z"
-    }
-  ],
+  "projects": [],
   "skills": {
     "frontend": [
       "Flutter",
