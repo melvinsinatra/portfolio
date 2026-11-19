@@ -47,9 +47,11 @@
   <div bind:this={skills}><Skills {data} /></div>
   <div bind:this={experience}><Experience {data} /></div>
 
-  <div bind:this={projects}>
-    <Projects {data} on:open={(e) => (activeProject = e.detail)} />
-  </div>
+  {#if data.projects?.length}
+    <div bind:this={projects}>
+      <Projects {data} on:open={(e) => (activeProject = e.detail)} />
+    </div>
+  {/if}
 
   <div bind:this={footer}><Footer {data} /></div>
 
